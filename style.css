@@ -1,0 +1,65 @@
+/* setting the font-size, fon-family and background color of the body element */
+body {
+    font: 18px arial, sans-serif;
+    background: #eee;
+  }
+  /* setting the width of the div element with id animals */
+  #animals {
+    width: 70%;
+  }
+  /* setting the flaot property and padding of the div with class animal-item 
+  by setting the floar property to left we are rendering items in this div to the left
+  of the page and they will also appear in line*/
+  .animal-item {
+    float: left;
+    padding: 10px;
+  }
+  /* seetting the float property to right so that form appears on the right of the page and then
+  setting the width and padding of the form element */
+  form {
+    float: right;
+    width: 30%;
+    padding: 20px;
+  }
+  /* setting the label element's display property as block so that it takes the whole width
+  and setting margin only at the bottom and also font-weight to increase the boldness of the label */
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  /* setting the css properties(width,height,margin at the bottom and font-size)
+   of the input element that is of type text*/
+  input[type="text"] {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  /* setting the css  properties of the button element and also the input element that is
+  of type submit */
+  button,
+  input[type="submit"] {
+    padding: 5px 20px;
+    margin: 0 10px 10px 0;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background: #659a98;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #bbb;
+  }
+  /* when the button element or the input element of type submit
+  is hovered or the cursor comes over the them then the following css styles should be added
+  to them   */
+  button:hover,
+  input[type="submit"]:hover {
+    background: #334e4d;
+  }
+  /* When the button is in active state i.e. when the button is clicked then the following
+  css property should be loaded. */
+  button.active {
+    background: #334e4d;
+  }
+  

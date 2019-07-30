@@ -1,0 +1,55 @@
+<!-- declaration defines this document to be HTML5 -->
+<!DOCTYPE html>
+<!-- opening HTML tag, language attribute is set to english -->
+<html lang="en">
+<!-- opening head tag , head contains the  meta data(data about the HTML page) -->
+<head>
+  <!-- <meta> element is used to specify which character set is used, page description, keywords, author, and other metadata.
+
+Metadata is used by browsers (how to display content), by search engines (keywords), and other web services. -->
+  <meta charset="UTF-8">
+  <!-- title tag sets the title of the page that appears on the tab of the browser -->
+  <title>Animaltastic</title>
+  <!-- link tag links to the external files that are used in rendering the HTML tags
+  => rel attribute stands for relationship of the external file to the HTML file, here it is 
+ a style sheet
+=> type attribute suggests the type of the external file
+=> href: stands for hypertext reference , that is the path of the external file, here the file 
+is in the same folder as HTML file so it's just the name of the css file. -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- closing head tag -->
+</head>
+<!-- opening tag of body, from here whatever will be inside the body tag it will be
+displayed on the browser -->
+<body>
+<!-- opening tag of div element with id animal-buttons -->
+  <div id="animal-buttons">
+<!-- closing tag of div elment -->
+  </div>
+<!-- form element with id animal-form -->
+  <form id="animal-form">
+    <!-- label element sets the label and "for" attribute suggests the input element id for which
+    the label is set -->
+    <label for="animal-input">Add an animal</label>
+<!-- input element of type text and id "animal-input" this element takes input from the user
+in form of text , self closing tag-->
+    <input type="text" id="animal-input"><br>
+    <!-- input element of type submit , this element takes user input when user submits the 
+      form , self closing tag-->
+    <input id="add-animal" type="submit" value="Submit">
+    <!-- closing tag for form element -->
+  </form>
+<!-- div element with id animals -->
+  <div id="animals">
+
+  </div>
+<!--  script tag  defines the client side script , either it has scripting statements or 
+  it points to an external script file through the src attribute. -->
+  <!-- here script tag points to the jquery library that is to be accessed through
+  src attribute which is necessary to use jquery on our site -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- points to the external script file app.js that has the logic and event handlers -->
+  <script src="app.js"></script>
+<!-- closing body and html tag -->
+</body>
+</html>
