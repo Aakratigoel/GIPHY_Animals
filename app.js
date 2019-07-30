@@ -53,7 +53,7 @@ $(document).ready(function() {
         var type = $(this).attr("data-type");
         // store the link/URL to/of the API to which request is sent into a variable named queryURL, and in the link mention
         // the parameter ( the type of animal whose gif we want to render on our page).
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=10";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=10";
     
         //ajax => Asynchronous javascript and XML
         // performs an asynchronous HTTP(ajax) request
