@@ -8,10 +8,10 @@ $(document).ready(function() {
         "hedgehog", "hermit crab", "gerbil", "pygmy goat", "chicken",
         "capybara", "teacup pig", "serval", "salamander", "frog"
       ];
-    //defining the function populateButtons that takes three arguments 
-    //the function creates buttons for all the animals that are in the argument "arrayToUse"
-    //and adds class to each button and the class is in the "classToAdd" argument and then the
-    // created button is added to the HTML element that is in the "areaToAddTo" argument.
+    //defining the function populateButtons that takes three parameters 
+    //the function creates buttons for all the animals that are in the parameter "arrayToUse"
+    //and adds class to each button and the class is in the "classToAdd" parameter and then the
+    // created button is added to the HTML element that is in the "areaToAddTo" parameter.
       function populateButtons(arrayToUse, classToAdd, areaToAddTo) {
         //deleting any information that the "areaToAddTo" HTML element already has, in order 
         //to just add  newly created buttons to the element
@@ -69,8 +69,8 @@ $(document).ready(function() {
         //.then returns a  promise that  can filter the status and 
         //values that are deferred through a function.It takes
         // doneCallback (A function that is called once a response is received and all the 
-        //data is stored in the response object.) as an argument .
-        //response is passed as an argument to the doneCallback function
+        //data is stored in the response object.) as an parameter .
+        //response is passed as an parameter to the doneCallback function
           .then(function(response) {
             //data is an array  of objects that is inside the response object and the data is fetched from
             //the response object and stored in the variable named as results.
